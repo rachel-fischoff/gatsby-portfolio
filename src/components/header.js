@@ -38,7 +38,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
           <IconButton
             edge="start"
@@ -54,6 +54,7 @@ const Header = ({ siteTitle }) => {
           <Button className={classes.button}> ABOUT</Button>
           <Button className={classes.button}> PROJECTS</Button>
           <Button className={classes.button}> RESUME</Button>
+          <Button className={classes.button}> CONTACT</Button>
         </Toolbar>
       </AppBar>
     </div>
