@@ -110,11 +110,13 @@ const Header = ({ siteTitle }) => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <StyledMenuItem button component={Link} to="/about">
+            <StyledMenuItem button>
+              <Link to="/About">
               <ListItemIcon>
                 <SearchIcon fontSize="small" />
               </ListItemIcon>
               <ListItemText primary="About" />
+              </Link>
             </StyledMenuItem>
             <StyledMenuItem button component={Link} to="/projects">
               <ListItemIcon>

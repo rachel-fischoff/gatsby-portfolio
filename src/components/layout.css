@@ -41,6 +41,7 @@ template {
 }
 a {
   background-color: transparent;
+  color: #18ffff;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -621,10 +622,6 @@ pre tt:after {
   }
 }
 
-button:hover {
-  background-color:'#18ffff' !important
-}
-
 a:hover {
-  color: '#18ffff' !important
+  color: #ff00a9;
 }

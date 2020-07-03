@@ -4,13 +4,13 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const About = () => (
+const Resume = () => (
   <Layout>
-    <SEO title="About" />
-    <h1>About</h1>
+    <SEO title="Resume" />
+    <h1>Resume</h1>
     <p>Rachel Fischoff</p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
-export default About
+export default Resume
