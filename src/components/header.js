@@ -122,7 +122,7 @@ const Header = ({ siteTitle }) => {
                 <ListItemText primary="Resume" />
               </Link>
             </StyledMenuItem>
-            <StyledMenuItem button >
+            <StyledMenuItem button>
               <Link to="/contact">
                 <ListItemText primary="Contact" />
               </Link>
@@ -136,10 +136,18 @@ const Header = ({ siteTitle }) => {
           <Typography variant="h6" className={classes.title}>
             {siteTitle}
           </Typography>
-          <Button className={classes.button}> ABOUT</Button>
-          <Button className={classes.button}> PROJECTS</Button>
-          <Button className={classes.button}> RESUME</Button>
-          <Button className={classes.button}> CONTACT</Button>
+          <Link to="/about">
+            <Button className={classes.button}> ABOUT</Button>
+          </Link>
+          <Link to="/projects">
+            <Button className={classes.button}> PROJECTS</Button>
+          </Link>
+          <Link to="/resume">
+            <Button className={classes.button}> RESUME</Button>
+          </Link>
+          <Link to="/contact">
+            <Button className={classes.button}> CONTACT</Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>
