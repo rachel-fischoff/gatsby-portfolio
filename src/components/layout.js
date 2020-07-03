@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <ThemeProvider theme={theme}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -35,16 +36,16 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <ThemeProvider theme={theme}>
         <CssBaseline />
         <main>{children}</main>
-        </ThemeProvider>
+        
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
+      </ThemeProvider>
     </>
   )
 }

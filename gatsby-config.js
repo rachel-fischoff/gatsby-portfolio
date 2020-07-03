@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Rachel Fischoff Portfolio`,
+    title: `Rachel Fischoff`,
     description: `info about Rachel Fischoff and her projects`,
     author: `@rachel-fischoff`,
   },
@@ -37,7 +37,7 @@ module.exports = {
       },
     },
     // 'gatsby-plugin-styled-components',
-    
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
