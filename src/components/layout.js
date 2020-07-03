@@ -8,7 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './theme';
 import Header from "./header"
 import "./layout.css"
 
@@ -33,7 +35,10 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <ThemeProvider theme={theme}>
+        <CssBaseline />
         <main>{children}</main>
+        </ThemeProvider>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
