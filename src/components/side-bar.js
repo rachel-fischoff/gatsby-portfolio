@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
     maxWidth: 60,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: '#18ffff',
   },
   list:{
     display: 'flex',
@@ -22,7 +22,8 @@ const useStyles = makeStyles(theme => ({
     top: '60px',
     left: '8px',
     right: 'auto',
-    zIndex: 10
+    zIndex: 10,
+
 }
   }
 ))

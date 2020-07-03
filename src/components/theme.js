@@ -5,21 +5,21 @@ import NotaSans from "typeface-noto-sans-full"
 const theme = createMuiTheme({
   palette: {
     primary: {
-      light: "#76ffff",
-      main: "#18ffff",
-      dark: "#00cbcc",
-      contrastText: "#000",
+      light: "#000",
+      main: "#000",
+      dark: "#000",
+      contrastText: "#18ffff",
     },
     secondary: {
-      light: "#534bae",
-      main: "#1a237e",
-      dark: "#000051",
+      light: "#ff00a9",
+      main: "#ff00a9",
+      dark: "#ff00a9",
       contrastText: "#fff",
     },
-    type: "dark",
+    // type: "dark",
     background: {
-      paper: "#1a237e",
-      default: "#000051",
+      paper: "#000",
+      default: "#000",
     },
     // action: {
     //   hover:'#1a237e',
@@ -33,28 +33,26 @@ const theme = createMuiTheme({
   overrides: {
     MuiButton: {
       root: {
-        color: "#000",
+        color: "#18ffff",
         "&:hover": {
-          backgroundColor: "#1a237e",
+          backgroundColor: "#ff00a9",
           contrastText: "#000",
           color: "#FFF",
         },
-      },
-      raised: {
-        color: "#000",
-      },
+      }
     },
-    // MuiListItemButton: {
-    //   root: {
-    //     "&:hover": {
-    //     backgroundColor: "#18ffff",
-    //   },
-    // }
-    // },
+    MuiListItemButton: {
+      root: {
+        "&:hover": {
+        backgroundColor: "#ff00a9",
+      },
+    }
+    },
     MuiListItemIcon: {
       root: {
+        color: '#18ffff',
       "&:hover": {
-        backgroundColor: "#18ffff",
+        backgroundColor: "#ff00a9",
       },
       minWidth: '0px'
     }
