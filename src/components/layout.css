@@ -620,3 +620,11 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+button:hover {
+  background-color:'#18ffff' !important
+}
+
+a:hover {
+  color: '#18ffff' !important
+}
