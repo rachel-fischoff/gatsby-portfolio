@@ -7,8 +7,8 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h2  style={{paddingTop:'8px',
-    paddingBottom: '8px'}}>Hello humans</h2>
+    {/* <div style = {{ textAlign: 'center'}}> */}
+    <h2 style={{ marginTop: "100px", paddingBottom: "8px" }}>Hello humans</h2>
     <h2>I'm Rachel Fischoff</h2>
     <h4>
       A full stack software engineer who loves learning new things, social
@@ -17,6 +17,7 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    {/* </div> */}
   </Layout>
 )
 

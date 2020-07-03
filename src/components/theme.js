@@ -3,6 +3,10 @@ import Roboto from "typeface-roboto"
 import NotaSans from "typeface-noto-sans-full"
 
 const theme = createMuiTheme({
+  root: {
+    flexGrow: 1,
+    display: "flex",
+  },
   palette: {
     primary: {
       light: "#000",

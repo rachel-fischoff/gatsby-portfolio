@@ -22,6 +22,7 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
@@ -64,6 +65,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  color: #ff00a9
 }
 mark {
   background-color: #ff0;
@@ -386,6 +388,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: #18ffff
 }
 figure {
   margin-left: 0;
@@ -624,4 +627,14 @@ pre tt:after {
 
 a:hover {
   color: #ff00a9;
+}
+
+main {
+  margin-left: 50px;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 }

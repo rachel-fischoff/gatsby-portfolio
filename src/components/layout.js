@@ -8,8 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+
 import CssBaseline from "@material-ui/core/CssBaseline"
 import { ThemeProvider } from "@material-ui/core/styles"
+
+import favicon from "../images/favicon.png"
+import Helmet from "react-helmet"
 import theme from "./theme"
 import Header from "./header"
 import "./layout.css"
@@ -28,9 +32,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link rel="icon" href={favicon} />
+      </Helmet>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header siteTitle={data.site.siteMetadata.title} /> 
+        <Header siteTitle={data.site.siteMetadata.title} />
         <SideBar />
         <div
           style={{

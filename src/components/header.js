@@ -8,16 +8,13 @@ import Typography from "@material-ui/core/Typography"
 import Button from "@material-ui/core/Button"
 import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
-import HomeIcon from '@material-ui/icons/Home';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import SearchIcon from '@material-ui/icons/Search';
-import TextFieldsIcon from '@material-ui/icons/TextFields';
-
-
-
+import HomeIcon from "@material-ui/icons/Home"
+import Menu from "@material-ui/core/Menu"
+import MenuItem from "@material-ui/core/MenuItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
+import SearchIcon from "@material-ui/icons/Search"
+import TextFieldsIcon from "@material-ui/icons/TextFields"
 
 const StyledMenu = withStyles({
   paper: {
@@ -43,9 +40,9 @@ const StyledMenuItem = withStyles(theme => ({
   root: {
     "&:focus": {
       backgroundColor: theme.palette.primary.main,
-      "& .MuiListItemIcon-root, & .MuiListItemText-primary": {
-        color: theme.palette.common.white,
-      },
+      // "& .MuiListItemIcon-root, & .MuiListItemText-primary": {
+      //   color: theme.palette.common.white,
+      // },
     },
   },
 }))(MenuItem)
@@ -79,7 +76,7 @@ const Header = ({ siteTitle }) => {
 
   const [anchorEl, setAnchorEl] = React.useState(null)
 
-  const handleClick = (event) => {
+  const handleClick = event => {
     setAnchorEl(event.currentTarget)
   }
 
@@ -89,7 +86,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed">
+      <AppBar position="static">
         <Toolbar>
           <IconButton
             edge="start"
@@ -101,7 +98,7 @@ const Header = ({ siteTitle }) => {
             onClick={handleClick}
             disableRipple="true"
           >
-          <MenuIcon />
+            <MenuIcon />
           </IconButton>
           <StyledMenu
             id="customized-menu"
@@ -111,30 +108,29 @@ const Header = ({ siteTitle }) => {
             onClose={handleClose}
           >
             <StyledMenuItem button>
-              <Link to="/About">
-              <ListItemIcon>
-                <SearchIcon fontSize="small" />
-              </ListItemIcon>
-              <ListItemText primary="About" />
+              <Link to="/about">
+                <ListItemText primary="About" />
               </Link>
             </StyledMenuItem>
-            <StyledMenuItem button component={Link} to="/projects">
-              <ListItemIcon>
-                <TextFieldsIcon fontSize="small" />
-              </ListItemIcon>
-              <ListItemText primary="Projects" />
+            <StyledMenuItem button>
+              <Link to="/projects">
+                <ListItemText primary="Projects" />
+              </Link>
             </StyledMenuItem>
-            <StyledMenuItem button component={Link} to="/resume">
-              <ListItemIcon>
-                <TextFieldsIcon fontSize="small" />
-              </ListItemIcon>
-              <ListItemText primary="Resume" />
+            <StyledMenuItem button>
+              <Link to="/resume">
+                <ListItemText primary="Resume" />
+              </Link>
             </StyledMenuItem>
-            <StyledMenuItem button component={Link} to="/contact">
-              <ListItemIcon>
-                <TextFieldsIcon fontSize="small" />
-              </ListItemIcon>
-              <ListItemText primary="Contact" />
+            <StyledMenuItem button >
+              <Link to="/contact">
+                <ListItemText primary="Contact" />
+              </Link>
+            </StyledMenuItem>
+            <StyledMenuItem button>
+              <Link to="/">
+                <ListItemText primary="Home" />
+              </Link>
             </StyledMenuItem>
           </StyledMenu>
           <Typography variant="h6" className={classes.title}>
