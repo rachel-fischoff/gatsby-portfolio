@@ -1,4 +1,5 @@
 import React from "react"
+import BuildOutlinedIcon from "@material-ui/icons/BuildOutlined"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -8,8 +9,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     {/* <div style = {{ textAlign: 'center'}}> */}
-    <h2 style={{ marginTop: "100px", paddingBottom: "8px" }}>Hello humans</h2>
-    <h2>I'm Rachel Fischoff</h2>
+    <div style = {{ display: "inline-flex"}}>
+    <h2 style={{ marginTop: "20px"}}>Hello humans </h2>
+    <BuildOutlinedIcon style={{ marginLeft:"20px", marginTop: "20px" }} />
+    <BuildOutlinedIcon style={{ marginLeft:"20px", marginTop: "20px" }} />
+    <BuildOutlinedIcon style={{ marginLeft:"20px", marginTop: "20px" }} />
+    </div>
+    <h2>I'm Rachel(she/her)</h2>
     <h4>
       A full stack software engineer who loves learning new things, social
       justice, data, and simple design.

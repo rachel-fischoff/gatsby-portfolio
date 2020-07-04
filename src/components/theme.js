@@ -61,6 +61,11 @@ const theme = createMuiTheme({
       minWidth: '0px'
     }
     },
+    MuiSvgIcon: {
+      root: {
+        fill: '#18ffff'
+      }
+    }
   },
 })
 
