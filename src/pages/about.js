@@ -11,9 +11,8 @@ const About = () => (
     <p>
       Hello there. I'm Rachel a curious creature with a scorpio sun, scorpio
       rising, and leo moon based in Durham, NC. I love coding and am grateful to
-      have transitioned to this career path. Back in 2006,</p> <span><a href="https://github.com/jfischoff">my brother </a> </span>
-      <p> tried to teach me to code. I didn't see the
-      possibilties.{" "}
+      have transitioned to this career path. Back in 2006, my brother tried to
+      teach me to code. I didn't see the possibilties.{" "}
     </p>
     <p>
       After working in non-profit, marketing, legal and hospitality (full
@@ -40,11 +39,12 @@ const About = () => (
       values within technology.{" "}
     </p>
     <p>
-      My background contritbues to how I see the world and build
-      software. I'm <strong>user-focused</strong> on how to best solve problems that
-      customers face which I developed from over two decades in the service industry. I enjoy aesthetically pleasing things and solving problems
-      in a way that also incorporates design. Design aids in learning, understanding, and ingesting
-      information in a way that doesn't feel overwhelming.
+      My background contritbues to how I see the world and build software. I'm{" "}
+      <strong>user-focused</strong> on how to best solve problems that customers
+      face which I developed from over two decades in the service industry. I
+      enjoy aesthetically pleasing things and solving problems in a way that
+      also incorporates design. Design aids in learning, understanding, and
+      ingesting information in a way that doesn't feel overwhelming.
     </p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
