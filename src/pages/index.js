@@ -10,12 +10,12 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <div style = {{ display: "inline-flex"}}>
-    <h2 style={{ marginTop: "20px"}}>Hello humans and machines</h2>
+    <h2 style={{ marginTop: "20px"}}>Hello humans and machines.</h2>
     <BuildOutlinedIcon style={{ marginLeft:"20px", marginTop: "20px" }} />
     <BuildOutlinedIcon style={{ marginLeft:"20px", marginTop: "20px" }} />
     <BuildOutlinedIcon style={{ marginLeft:"20px", marginTop: "20px" }} />
     </div>
-    <h2>I'm Rachel(she/her)</h2>
+    <h2>I'm Rachel(she/her).</h2>
     <h4>
       A full stack software engineer who loves learning new things, social
       justice, data, and simple design.

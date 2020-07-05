@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     position: 'fixed',
-    top: '60px',
+    top: '200px',
     left: '8px',
     right: 'auto',
     zIndex: 10,
@@ -40,17 +40,18 @@ export default function SideBar() {
       <List component="nav" aria-label="links for contact" className={classes.list}>
         <ListItem button>
           <ListItemIcon>
-            <MailOutlineIcon />
+            <MailOutlineIcon onClick={() => 
+            window.open( 'add email', "blank")} />
           </ListItemIcon>
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <GitHubIcon />
+            <GitHubIcon onClick={() =>  window.open( 'https://github.com/rachel-fischoff', "blank")} />
           </ListItemIcon>
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <LinkedInIcon />
+            <LinkedInIcon onClick={() => window.open( 'https://www.linkedin.com/in/rachel-fischoff-b4953536/', "blank")}/>
           </ListItemIcon>
         </ListItem>
         {/* <ListItemLink href="#simple-list">

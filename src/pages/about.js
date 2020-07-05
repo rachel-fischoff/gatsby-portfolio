@@ -21,7 +21,7 @@ const About = () => (
       Project Shift (link), my interest piqued. I took the Prep Course last
       summer and my passion for software engineering was ignited. I have always
       loved problem-solving, data and research. I have also loved creating,
-      admiring beautiful things and simple design. Fullstack allows me to
+      admiring beautiful things and simple design. full stack allows me to
       combine it all. From querying databases to creating my own APIs to Machine
       Learning to UX/UI to just day to day trouble shooting/debugging so many
       aspects of my interests are fulfilled. I find the endless amount of
@@ -29,7 +29,7 @@ const About = () => (
     </p>
     <p>
       I value equity and social justice above all. Often () My commitment to
-      creating a most just society is reflected in my schooling, job history and
+      creating a just society is reflected in my schooling, job history and
       personal life. I’m eager to use my skills to serve others in creating a
       more equitable society. I've also been able to volunteer with digital
       corps (OIT) and find queer community with OIT that recognize the
