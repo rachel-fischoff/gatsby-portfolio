@@ -1,3 +1,6 @@
+# Rachel's Portfolio - built with Gatsby's default starter, React & Material-UI
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
