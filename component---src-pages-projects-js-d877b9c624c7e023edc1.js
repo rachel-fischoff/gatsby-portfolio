@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"16l3":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("Wbzz"),o=a("Bl7J"),r=a("vrFN");t.default=function(){return l.a.createElement(o.a,null,l.a.createElement(r.a,{title:"Projects"}),l.a.createElement("h1",null,"Projects"),l.a.createElement("p",null,"Rachel Fischoff"),l.a.createElement(c.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-projects-js-d877b9c624c7e023edc1.js.map
