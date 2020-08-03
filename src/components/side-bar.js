@@ -40,8 +40,7 @@ export default function SideBar() {
       <List component="nav" aria-label="links for contact" className={classes.list}>
         <ListItem button>
           <ListItemIcon>
-            <MailOutlineIcon onClick={() => 
-            window.open( 'add email', "blank")} />
+            <MailOutlineIcon  />
           </ListItemIcon>
         </ListItem>
         <ListItem button>
