@@ -54,9 +54,6 @@ export default function SideBar() {
             <LinkedInIcon onClick={() => window.open( 'https://www.linkedin.com/in/rachel-fischoff-b4953536/', "blank")}/>
           </ListItemIcon>
         </ListItem>
-        {/* <ListItemLink href="#simple-list">
-          <ListItemText primary="???" />
-        </ListItemLink> */}
       </List>
     </div>
   )

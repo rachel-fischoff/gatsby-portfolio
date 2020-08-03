@@ -49,6 +49,7 @@ const theme = createMuiTheme({
       root: {
         "&:hover": {
         backgroundColor: "#ff00a9",
+        color: "#FFF",
       },
     }
     },
@@ -57,6 +58,7 @@ const theme = createMuiTheme({
         color: '#18ffff',
       "&:hover": {
         backgroundColor: "#ff00a9",
+        color: "#FFF",
       },
       minWidth: '0px'
     }
@@ -64,6 +66,9 @@ const theme = createMuiTheme({
     MuiSvgIcon: {
       root: {
         fill: '#18ffff'
+        },
+        "&:hover": {
+          fill: "#fff"
       }
     }
   },
