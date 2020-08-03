@@ -13,15 +13,15 @@ const Projects = () => (
     <h1>Projects</h1>
     <p>Rachel Fischoff</p>
 
-    {/* <Card>
+    <Card>
       <CardMedia
         component="video"
         height="280"
-        image={require("../images/final_project_2.mov")}
+        image={require("../images/final_project.mp4")}
         title="sentiment analysis demo"
         controls
       />
-    </Card> */}
+    </Card>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
