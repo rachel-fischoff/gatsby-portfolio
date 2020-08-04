@@ -13,20 +13,20 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
     maxWidth: 60,
-    backgroundColor: '#18ffff',
+    backgroundColor: "#18ffff",
+    flexGrow: 1,
+    display: "flex",
   },
-  list:{
-    display: 'flex',
-    flexDirection: 'column',
-    position: 'fixed',
-    top: '200px',
-    left: '8px',
-    right: 'auto',
+  list: {
+    display: "flex",
+    flexDirection: "column",
+    position: "fixed",
+    top: "200px",
+    left: "8px",
+    right: "auto",
     zIndex: 10,
-
-}
-  }
-))
+  },
+}))
 
 function ListItemLink(props) {
   return <ListItem button component="a" {...props} />
@@ -37,20 +37,35 @@ export default function SideBar() {
 
   return (
     <div className={classes.root}>
-      <List component="nav" aria-label="links for contact" className={classes.list}>
+      <List
+        component="nav"
+        aria-label="links for contact"
+        className={classes.list}
+      >
         <ListItem button>
           <ListItemIcon>
-            <MailOutlineIcon  />
+            <GitHubIcon
+              onClick={() =>
+                window.open("https://github.com/rachel-fischoff", "blank")
+              }
+            />
           </ListItemIcon>
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <GitHubIcon onClick={() =>  window.open( 'https://github.com/rachel-fischoff', "blank")} />
+            <LinkedInIcon
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/rachel-fischoff-b4953536/",
+                  "blank"
+                )
+              }
+            />
           </ListItemIcon>
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <LinkedInIcon onClick={() => window.open( 'https://www.linkedin.com/in/rachel-fischoff-b4953536/', "blank")}/>
+            <MailOutlineIcon />
           </ListItemIcon>
         </ListItem>
       </List>
