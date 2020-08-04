@@ -20,16 +20,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-      plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-XXXXXXXXX-X",
-      },
-    },
-  ],
-}
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

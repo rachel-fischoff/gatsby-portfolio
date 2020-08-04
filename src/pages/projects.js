@@ -11,18 +11,9 @@ import Typography from "@material-ui/core/Typography"
 import ExpansionPanel from "@material-ui/core/ExpansionPanel"
 import AccordionDetails from "@material-ui/core/AccordionDetails"
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary"
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 
 const useStyles = makeStyles(theme => ({
-  overrides: {
-    MuiExpansionPanelDetails: {
-      root: {
-        display: "block",
-        textAlign: "center",
-        alignItems: "center",
-      },
-    },
-  },
   root: {
     textAlign: "center",
     display: "flex",
@@ -34,7 +25,7 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
   },
   panel: {
-    backgroundColor: '#37474f',
+    backgroundColor: "#37474f",
   },
   typography: {
     textAlign: "center",
@@ -50,10 +41,10 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "bold",
   },
   expansionPanelDetails: {
-    root: {
-      display: "block",
-    },
-  }
+    padding: theme.spacing(2),
+    display: 'flex',
+    justifyContent: 'center',
+  },
 }))
 
 const Projects = () => {
@@ -70,7 +61,7 @@ const Projects = () => {
       <h1>Projects</h1>
 
       <ExpansionPanel
-        className ={classes.panel}
+        className={classes.panel}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -83,11 +74,11 @@ const Projects = () => {
             Sentiment Analysis Demo
           </Typography>
           <Typography className={classes.secondaryHeading}>
-          Twitter + Text Sentiment Analysis Project using a React - Flask app
+            Twitter + Text Sentiment Analysis Project using a React - Flask app
           </Typography>
         </ExpansionPanelSummary>
 
-        <AccordionDetails>
+        <AccordionDetails className={classes.expansionPanelDetails}>
           <Card>
             <CardMedia
               component="video"
@@ -99,26 +90,24 @@ const Projects = () => {
           </Card>
         </AccordionDetails>
       </ExpansionPanel>
-      <br/>
+      <br />
       <ExpansionPanel
-        className ={classes.panel}
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
+        className={classes.panel}
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
       >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
+          aria-controls="panel2bh-content"
+          id="panel2bh-header"
         >
-          <Typography className={classes.heading}>
-            Products Demo
-          </Typography>
+          <Typography className={classes.heading}>Products Demo</Typography>
           <Typography className={classes.secondaryHeading}>
-          A Product List Application using React, Redux, Mongodb + Node.js
+            A Product List Application using React, Redux, Mongodb + Node.js
           </Typography>
         </ExpansionPanelSummary>
 
-        <AccordionDetails>
+        <AccordionDetails className={classes.expansionPanelDetails}>
           <Card>
             <CardMedia
               component="img"
@@ -130,7 +119,39 @@ const Projects = () => {
           </Card>
         </AccordionDetails>
       </ExpansionPanel>
-      <br/>
+      <br />
+      <ExpansionPanel
+        className={classes.panel}
+        expanded={expanded === "panel3"}
+        onChange={handleChange("panel3")}
+      >
+        <ExpansionPanelSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3bh-content"
+          id="panel3bh-header"
+        >
+          <Typography className={classes.heading}>
+            Scikit-Learn Sprint
+          </Typography>
+          <Typography className={classes.secondaryHeading}>
+            Contributed to June 2020 sklearn open source sprint
+          </Typography>
+        </ExpansionPanelSummary>
+
+        <AccordionDetails className={classes.expansionPanelDetails}>
+          <div style = {{alignItems: 'center'}}>
+            <a href="https://sites.google.com/view/nyc-2020-scikit-sprint/contributors">
+              Contributor
+            </a>
+            <br />
+            <a href="https://github.com/scikit-learn/scikit-learn/pull/17475">
+              Github
+            </a>
+            </div>
+          </AccordionDetails>
+
+      </ExpansionPanel>
+      <br />
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
