@@ -60,6 +60,9 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
   },
+  grow: {
+    flexGrow: 1,
+  },
   button: {
     "&:hover": {
       backgroundColor: theme.palette.secondary,
@@ -93,7 +96,7 @@ const Header = ({ siteTitle }) => {
     setAnchorEl(event.currentTarget)
   }
 
-  const handleClose = () => {
+  const handleMenuClose = () => {
     setAnchorEl(null)
     handleMobileMenuClose()
   }
@@ -146,7 +149,7 @@ const Header = ({ siteTitle }) => {
   )
 
   return (
-    <div className={classes.root}>
+    <div className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -166,7 +169,7 @@ const Header = ({ siteTitle }) => {
             anchorEl={anchorEl}
             keepMounted
             open={Boolean(anchorEl)}
-            onClose={handleClose}
+            onClose={handleMenuClose}
           >
             <StyledMenuItem button>
               <Link to="/projects">
@@ -197,21 +200,24 @@ const Header = ({ siteTitle }) => {
           <Typography variant="h6" className={classes.title}>
             {siteTitle}
           </Typography>
-          <Link to="/projects">
-            <Button className={classes.button}> PROJECTS</Button>
-          </Link>
-          <Link to="/about">
-            <Button className={classes.button}> ABOUT</Button>
-          </Link>
-          <Link to="/resume">
-            <Button className={classes.button}> RESUME</Button>
-          </Link>
-          <Link to="/contact">
-            <Button className={classes.button}> CONTACT</Button>
-          </Link>
-          <Link to="/">
-            <Button className={classes.button}> HOME</Button>
-          </Link>
+          <div className={classes.grow} />
+          <div className={classes.sectionDesktop}>
+            <Link to="/projects">
+              <Button className={classes.button}> PROJECTS</Button>
+            </Link>
+            <Link to="/about">
+              <Button className={classes.button}> ABOUT</Button>
+            </Link>
+            <Link to="/resume">
+              <Button className={classes.button}> RESUME</Button>
+            </Link>
+            <Link to="/contact">
+              <Button className={classes.button}> CONTACT</Button>
+            </Link>
+            <Link to="/">
+              <Button className={classes.button}> HOME</Button>
+            </Link>
+          </div>
           <div className={classes.sectionMobile}>
             <IconButton
               aria-label="show more"
