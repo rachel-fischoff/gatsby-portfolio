@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{F2CN:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("Wbzz"),c=n("Bl7J"),u=n("vrFN");t.default=function(){return l.a.createElement(c.a,null,l.a.createElement(u.a,{title:"Resume"}),l.a.createElement("h1",null,"Resume"),l.a.createElement("p",null,"COMING SOON! "),l.a.createElement("br",null),l.a.createElement(r.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-resume-js-02db2ad7bf81b2dbec82.js.map
