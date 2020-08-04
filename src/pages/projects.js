@@ -42,8 +42,8 @@ const useStyles = makeStyles(theme => ({
   },
   expansionPanelDetails: {
     padding: theme.spacing(2),
-    display: 'flex',
-    justifyContent: 'center',
+    display: "flex",
+    justifyContent: "center",
   },
 }))
 
@@ -110,9 +110,9 @@ const Projects = () => {
         <AccordionDetails className={classes.expansionPanelDetails}>
           <Card>
             <CardMedia
-              component="img"
-              height="580"
-              image={require("../images/product_list.png")}
+              component="video"
+              height="280"
+              image={require("../images/prodcuts_demo.mp4")}
               title="product list demo"
               controls
             />
@@ -139,19 +139,18 @@ const Projects = () => {
         </ExpansionPanelSummary>
 
         <AccordionDetails className={classes.expansionPanelDetails}>
-          <div style = {{alignItems: 'center'}}>
-            <a href="https://sites.google.com/view/nyc-2020-scikit-sprint/contributors">
-              Contributor
-            </a>
-            <br />
-            <a href="https://github.com/scikit-learn/scikit-learn/pull/17475">
-              Github
-            </a>
-            </div>
-          </AccordionDetails>
-
+          <a href="https://sites.google.com/view/nyc-2020-scikit-sprint/contributors">
+            Contributor
+          </a>
+          <br />
+          <a href="https://github.com/scikit-learn/scikit-learn/pull/17475">
+            Github
+          </a>
+        </AccordionDetails>
       </ExpansionPanel>
       <br />
+
+      <h1 style={{ textAlign: "center" }}>More Coming Soon</h1>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
