@@ -7,12 +7,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-174419761-1",
-      },
-    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,6 +36,12 @@ module.exports = {
           injectFirst: true,
         },
 
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-174419761-1",
       },
     },
     // 'gatsby-plugin-styled-components',
