@@ -9,10 +9,16 @@ const About = () => (
     <SEO title="About" />
     <h1>About</h1>
     <p>
-      Hello there, I'm Rachel. I am a scorpio sun, with a scorpio rising, and a
+      Hello there, I'm Rachel(she/her). I am a scorpio sun, with a scorpio rising, and a
       leo moon based in Durham, NC. As a full stack software engineer, I
       approach problems by incorporating best practices for front end, back end &
       data engineering. 
+      <br />
+      <br />
+      I'm proficient in building applications using the MERN Stack (MongoDB,
+      Express.js, React.js and Node.js) in addition to HTML/CSS, WordPress,
+      Python/Flask & MySQL. I've began contributing to open source software & I am
+      excited to contribute more projects. 
       <br />
       <br />
       From UX/UI to querying databases. From creating API architecture to
@@ -20,16 +26,12 @@ const About = () => (
       thoroughly enjoy being an engineer.
       <br />
       <br />
-      I'm proficient in building applications using the MERN Stack (MongoDB,
-      Express.js, React.js and Node.js) in addition to HTML/CSS, WordPress,
-      Python/Flask & MySQL. I've began contributing to open source & I am
-      excited to contribute to more projects.
-      <br />
-      <br />
-      I’m always willing to volunteer my time and knowledge for projects focused on
+      I’m always willing to volunteer my time and knowledge for applications and websites focused on
       improving the lives of Black folx. More specifically, projects for trans Black
       folx, queer Black folx and/or projects that increase access to mental health services. Please feel free to
       contact me!
+      <br />
+      <br />
     </p>
     <br />
 
