@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 import { makeStyles, withStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
@@ -11,7 +11,7 @@ import MenuIcon from "@material-ui/icons/Menu"
 import Menu from "@material-ui/core/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
 import ListItemText from "@material-ui/core/ListItemText"
-
+import MoreIcon from "@material-ui/icons/MoreVert"
 
 const StyledMenu = withStyles({
   paper: {
@@ -66,12 +66,28 @@ const useStyles = makeStyles(theme => ({
       color: theme.palette.secondary,
     },
   },
+  sectionMobile: {
+    display: "flex",
+    [theme.breakpoints.up("md")]: {
+      display: "none",
+    },
+  },
+  sectionDesktop: {
+    display: "none",
+    [theme.breakpoints.up("md")]: {
+      display: "flex",
+    },
+  },
 }))
 
 const Header = ({ siteTitle }) => {
   const classes = useStyles()
 
-  const [anchorEl, setAnchorEl] = React.useState(null)
+  const [anchorEl, setAnchorEl] = useState(null)
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null)
+
+  const isMenuOpen = Boolean(anchorEl)
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget)
@@ -79,7 +95,55 @@ const Header = ({ siteTitle }) => {
 
   const handleClose = () => {
     setAnchorEl(null)
+    handleMobileMenuClose()
   }
+
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null)
+  }
+
+  const handleMobileMenuOpen = event => {
+    setMobileMoreAnchorEl(event.currentTarget)
+  }
+
+  const mobileMenuId = "primary-search-account-menu-mobile"
+  const renderMobileMenu = (
+    <StyledMenu
+      anchorEl={mobileMoreAnchorEl}
+      anchorOrigin={{ vertical: "top", horizontal: "right" }}
+      id={mobileMenuId}
+      keepMounted
+      transformOrigin={{ vertical: "top", horizontal: "right" }}
+      open={isMobileMenuOpen}
+      onClose={handleMobileMenuClose}
+    >
+      <StyledMenuItem button>
+        <Link to="/projects">
+          <ListItemText primary="Projects" />
+        </Link>
+      </StyledMenuItem>
+      <StyledMenuItem button>
+        <Link to="/about">
+          <ListItemText primary="About" />
+        </Link>
+      </StyledMenuItem>
+      <StyledMenuItem button>
+        <Link to="/resume">
+          <ListItemText primary="Resume" />
+        </Link>
+      </StyledMenuItem>
+      <StyledMenuItem button>
+        <Link to="/contact">
+          <ListItemText primary="Contact" />
+        </Link>
+      </StyledMenuItem>
+      <StyledMenuItem button>
+        <Link to="/">
+          <ListItemText primary="Home" />
+        </Link>
+      </StyledMenuItem>
+    </StyledMenu>
+  )
 
   return (
     <div className={classes.root}>
@@ -105,13 +169,13 @@ const Header = ({ siteTitle }) => {
             onClose={handleClose}
           >
             <StyledMenuItem button>
-              <Link to="/about">
-                <ListItemText primary="About" />
+              <Link to="/projects">
+                <ListItemText primary="Projects" />
               </Link>
             </StyledMenuItem>
             <StyledMenuItem button>
-              <Link to="/projects">
-                <ListItemText primary="Projects" />
+              <Link to="/about">
+                <ListItemText primary="About" />
               </Link>
             </StyledMenuItem>
             <StyledMenuItem button>
@@ -133,11 +197,11 @@ const Header = ({ siteTitle }) => {
           <Typography variant="h6" className={classes.title}>
             {siteTitle}
           </Typography>
-          <Link to="/about">
-            <Button className={classes.button}> ABOUT</Button>
-          </Link>
           <Link to="/projects">
             <Button className={classes.button}> PROJECTS</Button>
+          </Link>
+          <Link to="/about">
+            <Button className={classes.button}> ABOUT</Button>
           </Link>
           <Link to="/resume">
             <Button className={classes.button}> RESUME</Button>
@@ -145,8 +209,23 @@ const Header = ({ siteTitle }) => {
           <Link to="/contact">
             <Button className={classes.button}> CONTACT</Button>
           </Link>
+          <Link to="/">
+            <Button className={classes.button}> HOME</Button>
+          </Link>
+          <div className={classes.sectionMobile}>
+            <IconButton
+              aria-label="show more"
+              aria-controls={mobileMenuId}
+              aria-haspopup="true"
+              onClick={handleMobileMenuOpen}
+              color="inherit"
+            >
+              <MoreIcon />
+            </IconButton>
+          </div>
         </Toolbar>
       </AppBar>
+      {renderMobileMenu}
     </div>
   )
 }
