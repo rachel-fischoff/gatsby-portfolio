@@ -45,6 +45,9 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     justifyContent: "center",
   },
+  anchor: {
+    padding: theme.spacing(2),
+  },
 }))
 
 const Projects = () => {
@@ -139,11 +142,15 @@ const Projects = () => {
         </ExpansionPanelSummary>
 
         <AccordionDetails className={classes.expansionPanelDetails}>
-          <a href="https://sites.google.com/view/nyc-2020-scikit-sprint/contributors">
+          <a
+            className={classes.anchor}
+            href="https://sites.google.com/view/nyc-2020-scikit-sprint/contributors"
+          >
             Contributor
           </a>
           <br />
-          <a href="https://github.com/scikit-learn/scikit-learn/pull/17475">
+          <br />
+          <a  className={classes.anchor} href="https://github.com/scikit-learn/scikit-learn/pull/17475">
             Github
           </a>
         </AccordionDetails>

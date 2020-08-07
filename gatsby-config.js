@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/gatsby-portfolio",
   siteMetadata: {
     title: `Rachel Fischoff`,
-    description: `info about Rachel Fischoff and her projects`,
+    description: `Rachel Fischoff - Software Engineer`,
     author: `@rachel-fischoff`,
   },
   plugins: [
