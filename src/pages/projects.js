@@ -28,7 +28,9 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "#37474f",
   },
   typography: {
-    textAlign: "center",
+    fontSize: "15px",
+    // textAlign: "center",
+    padding: "8px 8px",
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -82,6 +84,23 @@ const Projects = () => {
         </ExpansionPanelSummary>
 
         <AccordionDetails className={classes.expansionPanelDetails}>
+          <Typography className={classes.typography}>
+            Final Individual Project for Project Shift - My Sentiment Analysis
+            Application. Sentiment Analysis is a branch of Natural Language
+            Processing(NLP) which is a form of Artificial Intelligence(AI) that
+            analyzes people’s opinions & emotions. My application allows the
+            user to enter original text or search twitter by subject. The app
+            then analyzes the original text or the text of the tweet as
+            positive, negative or neutral. The user can toogle between analyzing
+            text and tweets with NLTK’s VADER library or using the Machine
+            Learning(ML) model I created with TensorFlow.
+            <br />
+            <br />
+            Technologies: React, Hooks, Material-UI, Python, Pandas, Flask,
+            TensorFlow, NLTK, Scikit-Learn
+          </Typography>
+          <br />
+          <br />
           <Card>
             <CardMedia
               component="video"
@@ -150,7 +169,10 @@ const Projects = () => {
           </a>
           <br />
           <br />
-          <a  className={classes.anchor} href="https://github.com/scikit-learn/scikit-learn/pull/17475">
+          <a
+            className={classes.anchor}
+            href="https://github.com/scikit-learn/scikit-learn/pull/17475"
+          >
             Github
           </a>
         </AccordionDetails>
