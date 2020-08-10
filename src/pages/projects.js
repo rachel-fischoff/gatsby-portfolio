@@ -89,7 +89,7 @@ const Projects = () => {
             Application. Sentiment Analysis is a branch of Natural Language
             Processing(NLP) which is a form of Artificial Intelligence(AI) that
             analyzes people’s opinions & emotions. My application allows the
-            user to enter original text or search twitter by subject. The app
+            user to enter original text or search Twitter by subject. The app
             then analyzes the original text or the text of the tweet as
             positive, negative or neutral. The user can toogle between analyzing
             text and tweets with NLTK’s VADER library or using the Machine
@@ -125,11 +125,16 @@ const Projects = () => {
         >
           <Typography className={classes.heading}>Products Demo</Typography>
           <Typography className={classes.secondaryHeading}>
-            A Product List Application using React, Redux, Mongodb + Node.js
+            A Product List Application using React, Redux, MongoDB + Node.js
           </Typography>
         </ExpansionPanelSummary>
 
         <AccordionDetails className={classes.expansionPanelDetails}>
+        <Typography className={classes.typography}>
+            <br />
+            <br />
+          
+          </Typography>
           <Card>
             <CardMedia
               component="video"
