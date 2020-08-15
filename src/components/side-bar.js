@@ -65,7 +65,9 @@ export default function SideBar() {
         </ListItem>
         <ListItem button>
           <ListItemIcon>
+            <a href="mailto:rfischoff@gmail.com"> 
             <MailOutlineIcon />
+            </a>
           </ListItemIcon>
         </ListItem>
       </List>
