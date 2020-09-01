@@ -9,6 +9,7 @@ const Resume = () => (
     <SEO title="Resume" />
     <h1>Resume</h1>
     <p>COMING SOON! </p>
+    
     <br/>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
