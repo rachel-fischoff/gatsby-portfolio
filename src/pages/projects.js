@@ -130,10 +130,9 @@ const Projects = () => {
         </ExpansionPanelSummary>
 
         <AccordionDetails className={classes.expansionPanelDetails}>
-        <Typography className={classes.typography}>
+          <Typography className={classes.typography}>
             <br />
             <br />
-          
           </Typography>
           <Card>
             <CardMedia
@@ -179,6 +178,37 @@ const Projects = () => {
             href="https://github.com/scikit-learn/scikit-learn/pull/17475"
           >
             Github
+          </a>
+        </AccordionDetails>
+      </ExpansionPanel>
+      <br />
+      <ExpansionPanel
+        className={classes.panel}
+        expanded={expanded === "panel4"}
+        onChange={handleChange("panel4")}
+      >
+        <ExpansionPanelSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel4bh-content"
+          id="panel4bh-header"
+        >
+          <Typography className={classes.heading}>
+            Portfolio Gatbsy Starter
+          </Typography>
+          <Typography className={classes.secondaryHeading}>
+            Working on a Gatsby Starter for Digital Professionals with Katy
+            Anderson
+          </Typography>
+        </ExpansionPanelSummary>
+
+        <AccordionDetails className={classes.expansionPanelDetails}>
+          <br />
+          <br />
+          <a
+            className={classes.anchor}
+            href="https://portfolio-starter-gatsby.netlify.app/"
+          >
+            Demo
           </a>
         </AccordionDetails>
       </ExpansionPanel>
