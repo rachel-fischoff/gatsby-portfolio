@@ -1,6 +1,4 @@
 import { createMuiTheme } from "@material-ui/core/styles"
-import Roboto from "typeface-roboto"
-import NotaSans from "typeface-noto-sans-full"
 
 const theme = createMuiTheme({
   root: {
