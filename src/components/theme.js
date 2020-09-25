@@ -29,9 +29,9 @@ const theme = createMuiTheme({
     // },
   },
 
-  typography: {
-    fontFamily: ["NotaSans", "Roboto"].join(","),
-  },
+  // typography: {
+  //   fontFamily: ["NotaSans", "Roboto"].join(","),
+  // },
   overrides: {
     MuiButton: {
       root: {
